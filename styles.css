@@ -38,32 +38,44 @@ nav {
 }
 
 .home_container {
+  border: 2px solid yellow;
   display: flex;
   flex-wrap: wrap;
   justify-content: stretch;
-  align-items: center;
+  gap: 20px;
+  align-content: flex-start;
   background-color: skyblue;
+  max-height: 77.2vw;
 }
 
 .home_header_flex {
   display: flex;
   align-self: flex-start;
   padding: 5px;
+  border: 2px solid red;
   width: 100%;
 }
 
 .home_header {
+  border: 2px solid blue;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 7.6vw;
+  font-size: 6.5vw;
+}
+@media screen and (min-width: 1920px) {
+  .home_header {
+    font-size: 124px;
+  }
 }
 
 .home_img_flex {
   display: flex;
   justify-content: center;
   width: 100%;
+  border: 2px solid orange;
 }
 
 .home_img {
+  border: 2px solid blue;
   width: 100%;
   max-width: 1280px;
   max-height: 500px;
@@ -73,11 +85,18 @@ nav {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  border: 2px solid red;
 }
 
 .home_tagline {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 3.5vw;
+  border: 2px solid purple;
+  font-size: 3.8vw;
+}
+@media screen and (min-width: 1920px) {
+  .home_tagline {
+    font-size: 72px;
+  }
 }
 
 .main_container {
@@ -117,7 +136,7 @@ nav {
   max-width: 500px;
 }
 
-.projects_img {
+.projects_card_img {
   border: 2px solid black;
   height: 350px;
 }
