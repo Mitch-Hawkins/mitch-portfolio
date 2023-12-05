@@ -43,7 +43,7 @@ nav {
 }
 
 .home_container {
-  // border: 2px solid yellow;
+  border: 2px solid yellow;
   display: flex;
   flex-wrap: wrap;
 }
@@ -51,7 +51,7 @@ nav {
 .home_container_content {
   display: flex;
   flex-wrap: wrap;
-  // border: 2px solid green;
+  border: 2px solid green;
   justify-content: stretch;
   align-content: flex-start;
   gap: 20px;
@@ -63,12 +63,12 @@ nav {
   display: flex;
   align-self: flex-start;
   padding: 5px;
-  // border: 2px solid red;
+  border: 2px solid red;
   width: 100%;
 }
 
 .home_header {
-  // border: 2px solid blue;
+  border: 2px solid blue;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 6.5vw;
   @media screen and (min-width: 1920px) {
@@ -80,11 +80,11 @@ nav {
   display: flex;
   justify-content: center;
   width: 100%;
-  // border: 2px solid orange;
+  border: 2px solid orange;
 }
 
 .home_img {
-  // border: 2px solid blue;
+  border: 2px solid blue;
   width: 100%;
   max-width: 1280px;
   max-height: 500px;
@@ -94,98 +94,115 @@ nav {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  // border: 2px solid red;
+  border: 2px solid red;
 }
 
 .home_tagline {
   font-family: Arial, Helvetica, sans-serif;
-  // border: 2px solid purple;
+  border: 2px solid purple;
   font-size: 3.8vw;
   @media screen and (min-width: 1920px) {
     font-size: 72px;
   }
 }
 
+//container that borders the entire main tag
 .main_container {
-  //container that borders the entire main tag
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  // border: 2px solid green;
-  min-height: 94.5vh; //gotta change to vh!
+  border: 2px solid green;
+  // height: 94vh;
+  min-height: 94vh; //gotta change to vh!
   background-color: cadetblue;
 }
 
-.projects_flex_header {
-  //flex container for the 'Projects' header
+//flex container for the 'Projects' header
+.projects_header {
   display: flex;
   justify-content: flex-start;
+  border: 2px solid blue;
+  font-size: 72px;
   width: 100%;
-  font-size: 4vw;
-  // border: 2px solid blue;
+  // min-height: 8vh;
 }
 
 .projects_container {
   display: flex;
-  // flex-wrap: wrap;
-  flex-direction: column;
-  // border: 2px solid red;
-  min-height: 93vh;
+  border: 2px solid red;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 86vh;
+  // align-self: center;
 }
 
 .projects_container--primary {
   //umbrella flex container for the project cards
-  // border: 2px solid orange;
+  border: 2px solid orange;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  width: 100vw;
-  // height: 50%;
+  width: 100%;
+  height: 50%;
+  gap: 20px;
+  padding: 10px;
 }
 
 .projects_container--secondary {
   //umbrella flex container for the project cards
-  // border: 2px solid orange;
+  border: 2px solid orange;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  width: 100vw;
-  // height: 50%;
+  width: 100%;
+  height: 50%;
+  gap: 20px;
+  padding: 10px;
 }
 
+//properties distributed to each project card
 .projects_container_card {
-  //properties distributed to each project card
-  // border: 2px solid yellow;
-  flex-direction: column;
+  border: 2px solid yellow;
   display: flex;
-  margin: 20px;
-  width: 50vw;
-  // height: 42vh;
-  max-width: 500px;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  height: 100%;
+  font-size: 18px;
+  // height: 15%;
+  // align-items: center;
+  // width: 15vw;
+  // min-width: 15vw;
+  // max-width: 30vw;
+  // height: 100%;
 }
 
 .projects_card_img {
-  // border: 2px solid red;
-  // width: 500px;
-  height: 100%;
-  width: 100%;
+  border: 2px solid red;
+  // max-width: 500px;
+  // max-height: 350px;
+  // height: 60%;
+  // width: 60%;
 }
 
 .projects_card_title {
-  // border: 2px solid blue;
+  border: 2px solid blue;
   padding: 10px;
   text-align: center;
-  font-size: 1.8vw;
+  font-size: 1vw;
 }
 
 .projects_card_paragraph {
   display: flex;
-  // border: 2px solid purple;
+  border: 2px solid purple;
   flex-wrap: wrap;
   text-align: center;
-  font-size: 1.2vw;
+  font-size: 90%;
+  width: 80%;
 }
 
 .main_container--skills {
