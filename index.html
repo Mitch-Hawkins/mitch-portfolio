@@ -6,17 +6,17 @@
     <link rel="stylesheet" href="./styles.css" />
     <title>Mitch Hawkins</title>
   </head>
-  <body>
+  <body id="top">
     <nav>
       <div class="nav_name">
         <h3 class="nav_name_header">Mitch Hawkins</h3>
       </div>
       <div class="nav_links">
-        <h4 class="nav_links_header">Home</h4>
-        <h4 class="nav_links_header">Projects</h4>
-        <h4 class="nav_links_header">Skills</h4>
-        <h4 class="nav_links_header">About Me</h4>
-        <h4 class="nav_links_header">Contact</h4>
+        <a href="#top" class="nav_links_header">Home</a>
+        <a href="#projects" class="nav_links_header">Projects</a>
+        <a href="#skills" class="nav_links_header">Skills</a>
+        <a href="#aboutme" class="nav_links_header">About Me</a>
+        <a href="#aboutme" class="nav_links_header">Contact</a>
       </div>
     </nav>
     <main>
@@ -26,7 +26,11 @@
           <img id="hero-photo" src="http://placekitten.com/1280/500" />
         </div>
         <h2 class="home__tagline">Tagline Goes Here</h2>
+        <a href="#projects">
+          <img src="./icons8-down.gif" id="downlink" width="200" height="200" />
+        </a>
       </header>
+      <div class="scroll_marker" id="projects"></div>
       <!--  -->
       <section class="projects">
         <h2 class="projects__header">Projects</h2>
@@ -88,6 +92,7 @@
           </div>
         </section>
       </section>
+      <div class="scroll_marker" id="skills"></div>
       <!--  -->
       <section class="skills">
         <h2 class="skills_header">Skills</h2>
@@ -121,7 +126,7 @@
       <!--  -->
     </main>
     <footer>
-      <section class="aboutme">
+      <section class="aboutme" id="aboutme">
         <h2 class="aboutme__header">About Me</h2>
         <section class="aboutme__container">
           <div class="aboutme__container__card--img">
