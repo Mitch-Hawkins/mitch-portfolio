@@ -4,6 +4,19 @@
   scroll-behavior: smooth;
 }
 
+.scroll_marker {
+  width: 100%;
+  height: 52px;
+}
+
+#projects {
+  background-color: aliceblue;
+}
+
+#skills {
+  background-color: navy;
+}
+
 nav {
   display: flex;
   border: 2px solid black;
