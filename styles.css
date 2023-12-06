@@ -282,6 +282,7 @@ nav {
 
 #contact-image {
   width: 100%;
+  border-radius: 90px;
 }
 
 .aboutme__contact__container {
