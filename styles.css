@@ -88,7 +88,7 @@ nav {
   flex-direction: column;
   justify-content: flex-start;
   min-height: 94vh;
-  background-color: cadetblue;
+  background-color: aliceblue;
 }
 
 .projects__header {
@@ -212,4 +212,88 @@ nav {
 .skills_container_row_icon {
   width: 200px;
   height: 200px;
+}
+
+.aboutme {
+  background-color: skyblue;
+  display: flex;
+  flex-wrap: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  min-height: 94.5vh;
+}
+
+.aboutme__header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 100px;
+}
+
+.aboutme__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+  min-height: 64vh;
+  min-width: 400px;
+  max-width: 1600px;
+  height: 80%;
+  gap: 30px;
+}
+
+.aboutme__container__card--img {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  max-width: 500px;
+  justify-content: center;
+}
+
+.aboutme__container__card--p {
+  display: flex;
+  width: 40%;
+  min-width: 200px;
+  font-size: 24px;
+}
+
+#contact-image {
+  width: 100%;
+}
+
+.aboutme__contact__container {
+  display: flex;
+  min-width: 100%;
+  min-height: 12vh;
+  justify-content: center;
+  background-color: aliceblue;
+}
+
+.aboutme__contact__container__card {
+  display: flex;
+  width: 33%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.aboutme__contact__container__card--header {
+  display: flex;
+  font-size: 72px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.aboutme__contact__container__card--icon {
+  width: 96px;
+  height: 96px;
+}
+
+.aboutme__contact__container__card--footnote {
+  width: 33%;
+  align-self: flex-end;
+  text-align: right;
 }
