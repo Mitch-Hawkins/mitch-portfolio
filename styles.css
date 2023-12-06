@@ -40,7 +40,6 @@ nav {
 }
 
 .home {
-  border: 2px solid yellow;
   display: flex;
   flex-wrap: wrap;
   justify-content: stretch;
@@ -51,7 +50,6 @@ nav {
 }
 
 .home__header {
-  border: 2px solid blue;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 6.5vw;
 }
@@ -65,11 +63,9 @@ nav {
   display: flex;
   justify-content: center;
   width: 100%;
-  border: 2px solid orange;
 }
 
 #hero-photo {
-  border: 2px solid blue;
   width: 100%;
   max-width: 1280px;
   max-height: 500px;
@@ -77,7 +73,6 @@ nav {
 
 .home__tagline {
   font-family: Arial, Helvetica, sans-serif;
-  border: 2px solid purple;
   font-size: 3.8vw;
   width: 100%;
   text-align: right;
@@ -92,7 +87,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border: 2px solid green;
   min-height: 94vh;
   background-color: cadetblue;
 }
@@ -100,21 +94,18 @@ nav {
 .projects__header {
   display: flex;
   justify-content: flex-start;
-  border: 2px solid blue;
   font-size: 72px;
   width: 100%;
 }
 
 .projects__container {
   display: flex;
-  border: 2px solid red;
   flex-wrap: wrap;
   align-items: center;
   min-height: 86vh;
 }
 
 .projects__container__row {
-  border: 2px solid orange;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -126,31 +117,29 @@ nav {
 }
 
 .projects__container__row__card {
-  border: 2px solid yellow;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 360px;
+  width: 480px;
   height: 100%;
   font-size: 18px;
 }
 
 .projects__card__img {
-  border: 2px solid red;
+  height: 100%;
+  width: 100%;
 }
 
 .projects__card__title {
-  border: 2px solid blue;
   padding: 10px;
   text-align: center;
-  font-size: 1vw;
+  font-size: 24px;
 }
 
 .projects__card__paragraph {
   display: flex;
-  border: 2px solid purple;
   flex-wrap: wrap;
   text-align: center;
   font-size: 90%;
@@ -159,60 +148,59 @@ nav {
 
 .skills {
   background-color: navy;
-  border: 2px solid yellow;
   display: flex;
   flex-wrap: flex-start;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 5px;
   min-height: 94.5vh;
-  height: 94.5vh;
-  width: 100vw;
 }
 
 .skills_header {
   display: flex;
   justify-content: flex-end;
   align-self: flex-start;
-  border: 2px solid blue;
   width: 100%;
-  font-size: 8vw;
+  font-size: 100px;
   color: aliceblue;
 }
 
 .skills_container {
   display: flex;
-  border: 2px solid red;
   flex-wrap: wrap;
   width: 60%;
+  min-height: 44vh;
   height: 50%;
   align-self: center;
+}
+
+.skills_container--edu {
+  display: flex;
+  flex-direction: column;
+  min-height: 24vh;
+  background-color: aliceblue;
 }
 
 .skills_header--edu {
   display: flex;
   justify-content: flex-start;
-  border: 2px solid blue;
   width: 100%;
-  font-size: 6vw;
-  color: aliceblue;
+  font-size: 100px;
+  color: navy;
 }
 
 .skills_container_row--edu {
   display: flex;
-  border: 2px solid lime;
   justify-content: space-around;
   justify-self: start;
 }
 
 .skills_container_row_img {
-  border: 2px solid orange;
   max-width: 40%;
   max-height: 10vh;
 }
 
 .skills_container_row {
-  border: 2px solid orange;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -222,7 +210,6 @@ nav {
 }
 
 .skills_container_row_icon {
-  border: 2px solid yellow;
   width: 200px;
   height: 200px;
 }
