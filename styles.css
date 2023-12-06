@@ -56,7 +56,7 @@ nav {
 .home {
   display: flex;
   flex-wrap: wrap;
-  justify-content: stretch;
+  justify-content: center;
   align-content: flex-start;
   gap: 20px;
   background-color: skyblue;
@@ -65,6 +65,7 @@ nav {
 
 .home__header {
   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
   font-size: 6.5vw;
 }
 @media screen and (min-width: 1920px) {
@@ -77,6 +78,7 @@ nav {
   display: flex;
   justify-content: center;
   width: 100%;
+  background-color: navy;
 }
 
 #hero-photo {
@@ -95,6 +97,10 @@ nav {
   .home__tagline {
     font-size: 72px;
   }
+}
+
+#downlink {
+  mix-blend-mode: darken;
 }
 
 .projects {
