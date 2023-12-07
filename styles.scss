@@ -1,3 +1,5 @@
+@use "./partials/mixins";
+
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +9,14 @@
 .scroll_marker {
   // border: 2px solid red;
   width: 100%;
+  @include mixins.xsmall {
+    height: 76px;
+  }
   height: 52px;
+}
+
+#top {
+  background-color: skyblue;
 }
 
 #projects {
@@ -18,28 +27,36 @@
   background-color: navy;
 }
 
+#aboutme {
+  background-color: skyblue;
+}
+
 nav {
   display: flex;
   border: 2px solid black;
   background-color: lightblue;
   border-radius: 10px;
+  position: sticky;
+  top: 0;
+  @include mixins.xsmall {
+    padding: 20px 30px 20px 20px;
+  }
+
   justify-content: space-between;
   align-items: flex-start;
   margin: 5px;
-  padding-left: 100px;
-  padding-right: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  position: sticky;
-  top: 0;
+  padding: 20px 30px 20px 100px;
 }
 
 .nav_name {
   display: flex;
-  //   border: 2px solid blue;
+  // border: 2px solid blue;
   justify-content: center;
   align-items: flex-start;
   text-align: center;
+  @include mixins.xsmall {
+    font-size: 12px;
+  }
 }
 
 .nav_links {
@@ -54,6 +71,9 @@ nav {
   //   border: 2px solid green;
   justify-content: center;
   text-align: center;
+  @include mixins.xsmall {
+    font-size: 14px;
+  }
   padding: 2px;
 }
 
@@ -62,6 +82,9 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  @include mixins.xsmall {
+    align-content: flex-start;
+  }
   align-content: flex-start;
   gap: 20px;
   background-color: skyblue;
@@ -72,6 +95,26 @@ nav {
   // border: 2px solid blue;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
+  @include mixins.xsmall {
+    font-size: 42px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  @include mixins.small {
+    font-size: 54px;
+    text-align: left;
+    padding-top: 20px;
+  }
+  @include mixins.medium {
+    font-size: 64px;
+    text-align: left;
+    padding-top: 20px;
+  }
+  @include mixins.large {
+    font-size: 72px;
+    text-align: left;
+    padding-top: 20px;
+  }
   font-size: 6.5vw;
   @media screen and (min-width: 1920px) {
     font-size: 124px;
@@ -88,6 +131,10 @@ nav {
 
 #hero-photo {
   // border: 2px solid blue;
+  @include mixins.large {
+    width: 960px;
+    height: 375px;
+  }
   width: 100%;
   max-width: 1280px;
   max-height: 500px;
@@ -96,6 +143,22 @@ nav {
 .home__tagline {
   font-family: Arial, Helvetica, sans-serif;
   // border: 2px solid purple;
+  @include mixins.xsmall {
+    font-size: 36px;
+    text-align: center;
+  }
+  @include mixins.small {
+    font-size: 42px;
+    text-align: right;
+  }
+  @include mixins.medium {
+    font-size: 54px;
+    text-align: right;
+  }
+  @include mixins.large {
+    font-size: 58px;
+    text-align: right;
+  }
   font-size: 3.8vw;
   width: 100%;
   text-align: right;
@@ -107,6 +170,28 @@ nav {
 #downlink {
   // border: 2px solid lime;
   mix-blend-mode: darken;
+  @include mixins.xsmall {
+    width: 50px;
+    height: 50px;
+    margin-top: 70px;
+  }
+  @include mixins.small {
+    width: 100px;
+    height: 100px;
+    margin-top: 110px;
+  }
+  @include mixins.medium {
+    width: 100px;
+    height: 100px;
+  }
+  @include mixins.large {
+    width: 100px;
+    height: 100px;
+  }
+  @include mixins.xlarge {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 //container that borders the entire main tag
@@ -124,9 +209,15 @@ nav {
 .projects__header {
   display: flex;
   justify-content: flex-start;
-  // border: 2px solid blue;
-  font-size: 72px;
   width: 100%;
+  // border: 2px solid blue;
+  @include mixins.xsmall {
+    font-size: 48px;
+  }
+  @include mixins.large {
+    font-size: 64px;
+  }
+  font-size: 72px;
 }
 
 .projects__container {
@@ -158,6 +249,18 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @include mixins.xsmall {
+    width: 90%;
+  }
+  @include mixins.large {
+    width: 450px;
+  }
+  @include mixins.xlarge {
+    width: 500px;
+  }
+  @include mixins.xxlarge {
+    width: 600px;
+  }
   width: 480px;
   height: 100%;
   font-size: 18px;
@@ -167,6 +270,14 @@ nav {
   // border: 2px solid red;
   // max-width: 500px;
   // max-height: 350px;
+  @include mixins.xsmall {
+    height: 75%;
+    width: 75%;
+  }
+  @include mixins.xxlarge {
+    height: 100;
+    width: 100;
+  }
   height: 100%;
   width: 100%;
 }
@@ -176,6 +287,9 @@ nav {
   padding: 10px;
   text-align: center;
   font-size: 24px;
+  @include mixins.xxlarge {
+    font-size: 36px;
+  }
 }
 
 .projects__card__paragraph {
@@ -185,6 +299,9 @@ nav {
   text-align: center;
   font-size: 90%;
   width: 80%;
+  @include mixins.xxlarge {
+    font-size: 24px;
+  }
 }
 
 .skills {
@@ -204,21 +321,36 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-self: flex-start;
+  color: aliceblue;
   // border: 2px solid blue;
   width: 100%;
+  @include mixins.xsmall {
+    font-size: 48px;
+  }
+  @include mixins.small {
+    font-size: 54px;
+  }
+  @include mixins.medium {
+    font-size: 58px;
+  }
+  @include mixins.large {
+    font-size: 64px;
+  }
   font-size: 100px;
-  color: aliceblue;
 }
 
 .skills_container {
   display: flex;
   // border: 2px solid red;
+  align-self: center;
   // flex-direction: column;
   flex-wrap: wrap;
+  // @include mixins.xsmall {
+  //   width: 200px;
+  // }
   width: 60%;
   min-height: 44vh;
   height: 50%;
-  align-self: center;
 }
 
 .skills_container--edu {
@@ -233,9 +365,21 @@ nav {
   display: flex;
   justify-content: flex-start;
   // border: 2px solid blue;
-  width: 100%;
-  font-size: 100px;
   color: navy;
+  width: 100%;
+  @include mixins.xsmall {
+    font-size: 48px;
+  }
+  @include mixins.small {
+    font-size: 54px;
+  }
+  @include mixins.medium {
+    font-size: 58px;
+  }
+  @include mixins.large {
+    font-size: 64px;
+  }
+  font-size: 100px;
 }
 
 .skills_container_row--edu {
@@ -263,6 +407,18 @@ nav {
 
 .skills_container_row_icon {
   // border: 2px solid yellow;
+  @include mixins.xsmall {
+    width: 100px;
+    height: 100px;
+  }
+  @include mixins.small {
+    width: 150px;
+    height: 150px;
+  }
+  @include mixins.medium {
+    width: 175px;
+    height: 175px;
+  }
   width: 200px;
   height: 200px;
 }
@@ -276,7 +432,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   gap: 5px;
-  min-height: 94.5vh;
+  min-height: 84.5vh;
 }
 
 .aboutme__header {
@@ -284,6 +440,18 @@ nav {
   justify-content: center;
   // border: 2px solid blue;
   width: 100%;
+  @include mixins.xsmall {
+    font-size: 48px;
+    margin: 15px;
+  }
+  @include mixins.small {
+    font-size: 54px;
+    margin: 15px;
+  }
+  @include mixins.medium {
+    font-size: 68px;
+    margin: 5px;
+  }
   font-size: 100px;
 }
 
@@ -293,6 +461,37 @@ nav {
   // border: 2px solid red;
   align-items: center;
   justify-content: space-around;
+  @include mixins.xsmall {
+    width: 80%;
+    min-width: 0px;
+    min-height: 0px;
+    // max-height: 250px;
+  }
+  @include mixins.small {
+    width: 80%;
+    min-width: 0px;
+    min-height: 0px;
+    // max-height: 250px;
+  }
+  @include mixins.medium {
+    width: 80%;
+    min-width: 0px;
+    min-height: 0px;
+    // max-height: 250px;
+  }
+  @include mixins.large {
+    width: 80%;
+    min-width: 0px;
+    min-height: 0px;
+    // max-height: 250px;
+  }
+  @include mixins.xlarge {
+    width: 90%;
+    min-width: 0px;
+    min-height: 0px;
+    // max-height: 250px;
+  }
+
   width: 60%;
   min-height: 64vh;
   min-width: 400px;
@@ -316,6 +515,31 @@ nav {
   // border: 2px solid orange;
   width: 40%;
   min-width: 200px;
+  @include mixins.xsmall {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+  }
+  @include mixins.small {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+  @include mixins.medium {
+    width: 40%;
+    font-size: 20px;
+    // text-align: center;
+  }
+  @include mixins.large {
+    width: 40%;
+    font-size: 20px;
+    // text-align: center;
+  }
+  @include mixins.xlarge {
+    width: 50%;
+    font-size: 24px;
+    // text-align: center;
+  }
   font-size: 24px;
 }
 
@@ -323,11 +547,19 @@ nav {
   // border: 2px solid blue;
   width: 100%;
   border-radius: 90px;
+  @include mixins.large {
+    width: 80%;
+    height: 80%;
+  }
+  @include mixins.xlarge {
+    width: 60%;
+    height: 60%;
+  }
 }
 
 .aboutme__contact__container {
   display: flex;
-  min-width: 100%;
+  width: 100%;
   min-height: 12vh;
   justify-content: center;
   // border: 2px solid red;
@@ -340,6 +572,9 @@ nav {
   width: 33%;
   justify-content: space-around;
   align-items: center;
+  @include mixins.xsmall {
+    gap: 20px;
+  }
 }
 
 .aboutme__contact__container__card--header {
@@ -349,10 +584,20 @@ nav {
   align-items: center;
   justify-content: center;
   width: 100%;
+  @include mixins.xsmall {
+    visibility: hidden;
+  }
+  @include mixins.small {
+    font-size: 32px;
+  }
 }
 
 .aboutme__contact__container__card--icon {
   // border: 2px solid blue;
+  @include mixins.xsmall {
+    width: 72px;
+    height: 72px;
+  }
   width: 96px;
   height: 96px;
 }
@@ -362,4 +607,13 @@ nav {
   width: 33%;
   align-self: flex-end;
   text-align: right;
+  @include mixins.xsmall {
+    visibility: hidden;
+  }
+  @include mixins.small {
+    visibility: hidden;
+  }
+  @include mixins.medium {
+    font-size: 14px;
+  }
 }
