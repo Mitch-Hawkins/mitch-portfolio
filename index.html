@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Mitch Hawkins</title>
   </head>
   <body id="top">
@@ -21,11 +27,11 @@
     </nav>
     <main>
       <header class="home">
-        <h1 class="home__header">MITCH HAWKINS</h1>
+        <h1 class="home__header">Mitch Hawkins</h1>
         <div class="home__flex--img">
           <img id="hero-photo" src="./IMG_5291.jpeg" />
         </div>
-        <h2 class="home__tagline">Tagline Goes Here</h2>
+        <h2 class="home__tagline">Full stack developer</h2>
         <a href="#projects">
           <img src="./icons8-down.gif" id="downlink" width="200" height="200" />
         </a>
@@ -126,20 +132,21 @@
       <!--  -->
     </main>
     <footer>
-      <section class="aboutme" id="aboutme">
+      <div class="scroll_marker" id="aboutme"></div>
+      <section class="aboutme">
         <h2 class="aboutme__header">About Me</h2>
         <section class="aboutme__container">
           <div class="aboutme__container__card--img">
             <img id="contact-image" src="./ProfilePictureCropped.jpg" />
           </div>
           <p class="aboutme__container__card--p">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            autem ut dolores at quasi optio nisi obcaecati ipsa unde dignissimos
-            eius aliquid veritatis a incidunt accusantium sunt laboriosam quis
-            ea minus architecto, explicabo praesentium. Cumque voluptatibus
-            nulla voluptatum sequi quasi sit maxime perferendis fuga voluptatem
-            incidunt placeat illum rem quidem odit deleniti accusamus sapiente,
-            reprehenderit expedita in non. Quibusdam, inventore.
+            G’day, I’m Mitch! Professional Musician turned Software Developer
+            from Sydney NSW. Having been a long time tech enthusiast, I’m always
+            willing to expand my knowledge and face challenges head on with an
+            impressive combination of Software and Hardware skills.
+            <br />
+            <br />
+            I’m also a big lover of Football, Nachos, and all things Live Music!
           </p>
         </section>
         <div class="aboutme__contact__container">
@@ -147,18 +154,21 @@
             <h3 class="aboutme__contact__container__card--header">Contact</h3>
           </div>
           <div class="aboutme__contact__container__card">
-            <img
-              class="aboutme__contact__container__card--icon"
-              src="./icons8-linkedin-96.png"
-            />
-            <img
-              class="aboutme__contact__container__card--icon"
-              src="./icons8-github-96.png"
-            />
-            <img
-              class="aboutme__contact__container__card--icon"
-              src="./icons8-mail-96.png"
-            />
+            <a href="https://www.linkedin.com/"
+              ><img
+                class="aboutme__contact__container__card--icon"
+                src="./icons8-linkedin-96.png"
+            /></a>
+            <a href="https://github.com/Mitch-Hawkins"
+              ><img
+                class="aboutme__contact__container__card--icon"
+                src="./icons8-github-96.png"
+            /></a>
+            <a href="#mailto:mitch@hawkins5.com"
+              ><img
+                class="aboutme__contact__container__card--icon"
+                src="./icons8-mail-96.png"
+            /></a>
           </div>
           <h4 class="aboutme__contact__container__card--footnote">
             Built using HTML and SCSS by Mitch Hawkins.
