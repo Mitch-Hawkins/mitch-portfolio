@@ -9,7 +9,7 @@
 
 .scroll_marker {
   // border: 2px solid red;
-  width: 100%;
+  width: 100vw;
   @include mixins.xsmall {
     height: 76px;
   }
@@ -17,7 +17,8 @@
 }
 
 #top {
-  background-color: #0077b6;
+  background-image: linear-gradient(to top right, #023e8a, #90e0ef);
+  width: 100vw;
 }
 
 #projects {
@@ -85,7 +86,7 @@ nav {
 
 .nav_links_header {
   display: flex;
-  //   border: 2px solid green;
+  // border: 2px solid green;
   justify-content: center;
   text-align: center;
   text-decoration: none;
@@ -256,7 +257,7 @@ nav {
 .projects__header {
   display: flex;
   justify-content: flex-start;
-  width: 100%;
+  width: 95%;
   padding-top: 20px;
   margin-left: 20px;
   // border: 2px solid blue;
@@ -434,7 +435,7 @@ nav {
   justify-content: flex-start;
   // border: 2px solid blue;
   color: #0077b6;
-  width: 100%;
+  width: 95;
   margin-left: 40px;
   @include mixins.xsmall {
     font-size: 48px;
