@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
 }
 
 .scroll_marker {
@@ -15,31 +16,31 @@
 }
 
 #top {
-  background-color: skyblue;
+  background-color: #0077b6;
 }
 
 #projects {
-  background-color: aliceblue;
+  background-color: #caf0f8;
 }
 
 #skills {
-  background-color: navy;
+  background-color: #0077b6;
 }
 
 #aboutme {
-  background-color: skyblue;
+  background-color: #caf0f8;
 }
 
 nav {
   display: flex;
   border: 2px solid black;
-  background-color: lightblue;
+  background-color: aliceblue;
   border-radius: 10px;
   position: sticky;
   top: 0;
+  z-index: 10;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 5px;
   padding: 20px 30px 20px 100px;
 }
 @media only screen and (max-width: 576px) {
@@ -84,8 +85,8 @@ nav {
   justify-content: center;
   align-content: flex-start;
   gap: 20px;
-  background-color: skyblue;
-  min-height: 94vh;
+  background-image: linear-gradient(to top right, #023e8a, #90e0ef);
+  min-height: 94.8vh;
 }
 @media only screen and (max-width: 576px) {
   .home {
@@ -94,41 +95,43 @@ nav {
 }
 
 .home__header {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", sans-serif;
   width: 100%;
+  color: #caf0f8;
+  margin-left: 20px;
   font-size: 6.5vw;
 }
 @media only screen and (max-width: 576px) {
   .home__header {
-    font-size: 42px;
+    font-size: 64px;
     text-align: center;
     padding-top: 20px;
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .home__header {
-    font-size: 54px;
+    font-size: 84px;
     text-align: left;
     padding-top: 20px;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   .home__header {
-    font-size: 64px;
+    font-size: 94px;
     text-align: left;
     padding-top: 20px;
   }
 }
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
   .home__header {
-    font-size: 72px;
+    font-size: 102px;
     text-align: left;
     padding-top: 20px;
   }
 }
 @media screen and (min-width: 1920px) {
   .home__header {
-    font-size: 124px;
+    font-size: 160px;
   }
 }
 
@@ -136,13 +139,17 @@ nav {
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: navy;
+  background-color: #caf0f8;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 #hero-photo {
+  border: 20px solid #caf0f8;
   width: 100%;
   max-width: 1280px;
   max-height: 500px;
+  border-radius: 20px;
 }
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
   #hero-photo {
@@ -153,6 +160,8 @@ nav {
 
 .home__tagline {
   font-family: Arial, Helvetica, sans-serif;
+  color: #caf0f8;
+  margin-right: 20px;
   font-size: 3.8vw;
   width: 100%;
   text-align: right;
@@ -189,6 +198,7 @@ nav {
 
 #downlink {
   mix-blend-mode: darken;
+  z-index: -10;
 }
 @media only screen and (max-width: 576px) {
   #downlink {
@@ -228,13 +238,15 @@ nav {
   flex-direction: column;
   justify-content: flex-start;
   min-height: 94vh;
-  background-color: aliceblue;
+  background-color: #caf0f8;
 }
 
 .projects__header {
   display: flex;
   justify-content: flex-start;
   width: 100%;
+  padding-top: 20px;
+  margin-left: 20px;
   font-size: 72px;
 }
 @media only screen and (max-width: 576px) {
@@ -339,13 +351,13 @@ nav {
 }
 
 .skills {
-  background-color: navy;
+  background-color: #0077b6;
   display: flex;
   flex-wrap: flex-start;
   flex-direction: column;
   justify-content: space-between;
   gap: 5px;
-  min-height: 94.5vh;
+  min-height: 95.8vh;
 }
 
 .skills_header {
@@ -353,7 +365,9 @@ nav {
   justify-content: flex-end;
   align-self: flex-start;
   color: aliceblue;
-  width: 100%;
+  padding-top: 20px;
+  margin-right: 20px;
+  width: 98%;
   font-size: 100px;
 }
 @media only screen and (max-width: 576px) {
@@ -379,11 +393,28 @@ nav {
 
 .skills_container {
   display: flex;
+  border: 5px solid aliceblue;
+  border-radius: 40px;
   align-self: center;
+  align-items: center;
   flex-wrap: wrap;
-  width: 60%;
+  width: 40%;
   min-height: 44vh;
-  height: 50%;
+}
+@media only screen and (max-width: 576px) {
+  .skills_container {
+    width: 100px;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .skills_container {
+    width: 500px;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .skills_container {
+    width: 600px;
+  }
 }
 
 .skills_container--edu {
@@ -396,8 +427,9 @@ nav {
 .skills_header--edu {
   display: flex;
   justify-content: flex-start;
-  color: navy;
+  color: #0077b6;
   width: 100%;
+  margin-left: 40px;
   font-size: 100px;
 }
 @media only screen and (max-width: 576px) {
@@ -440,6 +472,12 @@ nav {
   width: 100%;
   height: 50%;
 }
+@media only screen and (max-width: 576px) {
+  .skills_container_row {
+    justify-content: center;
+    height: 300px;
+  }
+}
 
 .skills_container_row_icon {
   width: 200px;
@@ -465,14 +503,14 @@ nav {
 }
 
 .aboutme {
-  background-color: skyblue;
+  background-color: #caf0f8;
   display: flex;
   flex-wrap: flex-start;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 5px;
-  min-height: 84.5vh;
+  min-height: 94.5vh;
 }
 
 .aboutme__header {
@@ -560,32 +598,32 @@ nav {
   display: flex;
   width: 40%;
   min-width: 200px;
-  font-size: 24px;
+  font-size: 30px;
 }
 @media only screen and (max-width: 576px) {
-  .aboutme__container__card--p {
-    width: 100%;
-    font-size: 16px;
-    text-align: center;
-  }
-}
-@media only screen and (min-width: 577px) and (max-width: 768px) {
   .aboutme__container__card--p {
     width: 100%;
     font-size: 18px;
     text-align: center;
   }
 }
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .aboutme__container__card--p {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+  }
+}
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   .aboutme__container__card--p {
     width: 40%;
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
   .aboutme__container__card--p {
     width: 40%;
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1400px) {
@@ -598,6 +636,12 @@ nav {
 #contact-image {
   width: 100%;
   border-radius: 90px;
+  box-shadow: 20px 20px #03045e;
+}
+@media only screen and (max-width: 576px) {
+  #contact-image {
+    box-shadow: 0px 0px #03045e;
+  }
 }
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
   #contact-image {
@@ -609,6 +653,12 @@ nav {
   #contact-image {
     width: 60%;
     height: 60%;
+    box-shadow: 40px 40px #03045e;
+  }
+}
+@media only screen and (min-width: 1401px) {
+  #contact-image {
+    box-shadow: 40px 40px #03045e;
   }
 }
 
@@ -617,7 +667,7 @@ nav {
   width: 100%;
   min-height: 12vh;
   justify-content: center;
-  background-color: aliceblue;
+  background-color: #03045e;
 }
 
 .aboutme__contact__container__card {
@@ -638,6 +688,7 @@ nav {
   align-items: center;
   justify-content: center;
   width: 100%;
+  color: aliceblue;
 }
 @media only screen and (max-width: 576px) {
   .aboutme__contact__container__card--header {
@@ -665,6 +716,7 @@ nav {
   width: 33%;
   align-self: flex-end;
   text-align: right;
+  color: aliceblue;
 }
 @media only screen and (max-width: 576px) {
   .aboutme__contact__container__card--footnote {
