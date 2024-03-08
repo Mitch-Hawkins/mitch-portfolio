@@ -27,11 +27,15 @@
     </nav>
     <main>
       <header class="home">
-        <h1 class="home__header">Mitch Hawkins</h1>
-        <div class="home__flex--img">
-          <img id="hero-photo" src="./images/IMG_5291.jpeg" />
+        <div class="home__background__wrapper">
+          <div class="home__flex--img">
+            <img id="hero-photo" src="./images/HeroPhoto_Cropped.JPG" />
+          </div>
+          <div class="home__text__wrapper">
+            <h1 class="home__header">Mitch Hawkins</h1>
+            <h2 class="home__tagline">Full stack developer</h2>
+          </div>
         </div>
-        <h2 class="home__tagline">Full stack developer</h2>
         <a href="#projects">
           <img
             src="./images/icons8-down.gif"
@@ -144,37 +148,87 @@
         <h2 class="skills_header">Skills</h2>
         <section class="skills_container">
           <article class="skills_container_row">
-            <img
-              class="skills_container_row_icon"
-              src="./images/icons8-html-200.png"
-            />
-            <img
-              class="skills_container_row_icon"
-              src="./images/icons8-css-200.png"
-            />
-          </article>
-          <article class="skills_container_row">
-            <img
-              class="skills_container_row_icon"
-              src="./images/icons8-javascript-200.png"
-            />
-            <img
-              class="skills_container_row_icon"
-              src="./images/1175191.webp"
-            />
+            <!-- <article class="skills_container_row"> -->
+            <div class="skills__img__wrapper">
+              <img
+                class="skills_container_row_icon"
+                src="./images/icons8-html-200.png"
+              />
+              <p>HTML</p>
+            </div>
+            <div class="skills__img__wrapper">
+              <img
+                class="skills_container_row_icon"
+                src="./images/icons8-css-200.png"
+              />
+              <p>CSS</p>
+            </div>
+            <!-- </article> -->
+            <div class="skills__img__wrapper">
+              <img
+                class="skills_container_row_icon"
+                src="./images/icons8-javascript-200.png"
+              />
+              <p>JavaScript</p>
+            </div>
+            <div class="skills__img__wrapper">
+              <img
+                class="skills_container_row_icon"
+                src="./images/icons8-java-200.png"
+              />
+              <p>Java</p>
+            </div>
+            <div class="skills__img__wrapper">
+              <img
+                class="skills_container_row_icon"
+                src="./images/icons8-react-160.png"
+              />
+              <p>React</p>
+            </div>
+            <div class="skills__img__wrapper">
+              <img
+                class="skills_container_row_icon"
+                src="./images/icons8-spring-boot-160.png"
+              />
+              <p>Spring</p>
+            </div>
+            <div class="skills__img__wrapper">
+              <img
+                class="skills_container_row_icon"
+                src="./images/icons8-sql-64.png"
+              />
+              <p>SQL/MySQL</p>
+            </div>
+            <div class="skills__img__wrapper">
+              <img
+                class="skills_container_row_icon"
+                src="./images/icons8-typescript-96.png"
+              />
+              <p>TypeScript</p>
+            </div>
+            <div class="skills__img__wrapper">
+              <img
+                class="skills_container_row_icon"
+                src="./images/nestjs-icon-1024x1020-34exj0g6.png"
+              />
+              <p>Nest.JS</p>
+            </div>
           </article>
         </section>
         <div class="skills_container--edu">
           <h2 class="skills_header--edu">Education</h2>
           <article class="skills_container_row--edu">
-            <img
-              class="skills_container_row_img"
-              src="./images/applydirect-aim.png"
-            />
-            <img
-              class="skills_container_row_img"
-              src="./images/Nology_CMYK-02-01.png"
-            />
+            <div class="education__wrapper">
+              <img class="education__img" src="./images/applydirect-aim.png" />
+              <p>Graduated 2020</p>
+            </div>
+            <div class="education__wrapper">
+              <img
+                class="education__img"
+                src="./images/Nology_CMYK-02-01.png"
+              />
+              <p>Course Completed March 2024</p>
+            </div>
           </article>
         </div>
       </section>
@@ -203,17 +257,19 @@
             <h3 class="aboutme__contact__container__card--header">Contact</h3>
           </div>
           <div class="aboutme__contact__container__card">
-            <a href="https://www.linkedin.com/"
+            <a
+              href="https://www.linkedin.com/in/mitch-hawkins-2436a0219/"
+              target="_blank"
               ><img
                 class="aboutme__contact__container__card--icon"
                 src="./images/icons8-linkedin-96.png"
             /></a>
-            <a href="https://github.com/Mitch-Hawkins"
+            <a href="https://github.com/Mitch-Hawkins" target="_blank"
               ><img
                 class="aboutme__contact__container__card--icon"
                 src="./images/icons8-github-96.png"
             /></a>
-            <a href="#mailto:mitch@hawkins5.com"
+            <a href="mailto:mitch@hawkins5.com" target="_blank"
               ><img
                 class="aboutme__contact__container__card--icon"
                 src="./images/icons8-mail-96.png"

@@ -17,7 +17,7 @@
 }
 
 #top {
-  background-image: linear-gradient(to top right, #023e8a, #90e0ef);
+  background: linear-gradient(to top right, #023e8a, #90e0ef 100%);
   width: 100vw;
 }
 
@@ -35,9 +35,12 @@
 
 nav {
   display: flex;
-  border: 2px solid black;
+  // border: 2px solid black;
+  // border-top: none;
   background-color: aliceblue;
-  border-radius: 10px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.164);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -111,8 +114,46 @@ nav {
   }
   align-content: flex-start;
   gap: 20px;
-  background-image: linear-gradient(to top right, #023e8a, #90e0ef);
+  // background-image: linear-gradient(to top right, #023e8a 10%, #90e0ef);
   min-height: 94.8vh;
+}
+
+.home__background__wrapper {
+  animation: ease 3s fadeInAnimation;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  display: flex;
+  // border: 2px solid green;
+  margin-top: 20px;
+  width: 93vw;
+
+  background-color: #caf0f8;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.288);
+  height: 100%;
+  max-height: 800px;
+  @include mixins.xsmall {
+    flex-direction: column;
+    align-items: center;
+  }
+  @include mixins.small {
+    flex-direction: column;
+    align-items: center;
+    max-height: 1000px;
+  }
+  @include mixins.medium {
+    flex-direction: column;
+    align-items: center;
+    max-height: 1200px;
+  }
+}
+
+.home__text__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  // border: 2px solid red;
 }
 
 .home__header {
@@ -121,26 +162,26 @@ nav {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   font-family: "Inter", sans-serif;
-  width: 100%;
-  color: #caf0f8;
+  width: 90%;
+  color: #023e8a;
   margin-left: 20px;
   @include mixins.xsmall {
     font-size: 64px;
-    text-align: center;
+    text-align: left;
     padding-top: 20px;
   }
   @include mixins.small {
-    font-size: 84px;
+    font-size: 74px;
     text-align: left;
     padding-top: 20px;
   }
   @include mixins.medium {
-    font-size: 94px;
+    font-size: 84px;
     text-align: left;
     padding-top: 20px;
   }
   @include mixins.large {
-    font-size: 102px;
+    font-size: 64px;
     text-align: left;
     padding-top: 20px;
   }
@@ -156,11 +197,15 @@ nav {
   animation-fill-mode: forwards;
   display: flex;
   justify-content: center;
-  width: 95%;
-  background-color: #caf0f8;
+  // width: 95%;
+  // background-color: #caf0f8;
   padding: 10px;
   border-radius: 15px;
   // border: 2px solid orange;
+  @include mixins.medium {
+    width: 720px;
+    height: 600px;
+  }
 }
 
 @keyframes fadeInAnimation {
@@ -176,44 +221,44 @@ nav {
   animation: ease 3s fadeInAnimation;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  border: 20px solid #caf0f8;
+  // border: 20px solid #caf0f8;
   @include mixins.large {
-    width: 960px;
-    height: 375px;
+    width: 600px;
+    height: 500px;
   }
   width: 100%;
-  max-width: 1280px;
-  max-height: 500px;
+  max-width: 960px;
+  max-height: 800px;
   border-radius: 20px;
 }
 
 .home__tagline {
   font-family: Arial, Helvetica, sans-serif;
-  color: #caf0f8;
-  margin-right: 20px;
+  color: #023e8a;
+  margin-left: 20px;
   animation: ease 3s fadeInAnimation;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   // border: 2px solid purple;
   @include mixins.xsmall {
     font-size: 36px;
-    text-align: center;
+    text-align: left;
   }
   @include mixins.small {
     font-size: 42px;
-    text-align: right;
+    text-align: left;
   }
   @include mixins.medium {
     font-size: 54px;
-    text-align: right;
+    text-align: left;
   }
   @include mixins.large {
-    font-size: 58px;
-    text-align: right;
+    font-size: 36px;
+    text-align: left;
   }
   font-size: 3.8vw;
-  width: 100%;
-  text-align: right;
+  width: 90%;
+  // text-align: right;
   @media screen and (min-width: 1920px) {
     font-size: 72px;
   }
@@ -221,12 +266,13 @@ nav {
 
 #downlink {
   // border: 2px solid lime;
+  margin-top: 100px;
   mix-blend-mode: darken;
   z-index: -10;
   @include mixins.xsmall {
-    width: 50px;
-    height: 50px;
-    margin-top: 70px;
+    width: 100px;
+    height: 100px;
+    margin-top: 140px;
   }
   @include mixins.small {
     width: 100px;
@@ -234,12 +280,14 @@ nav {
     margin-top: 110px;
   }
   @include mixins.medium {
+    margin-top: 50px;
     width: 100px;
     height: 100px;
   }
   @include mixins.large {
-    width: 100px;
-    height: 100px;
+    margin-top: 200px;
+    width: 125px;
+    height: 125px;
   }
   @include mixins.xlarge {
     width: 150px;
@@ -411,7 +459,8 @@ nav {
   // flex-direction: column;
   flex-wrap: wrap;
   @include mixins.xsmall {
-    width: 100px;
+    width: 300px;
+    // height: 400px;
   }
   @include mixins.large {
     width: 500px;
@@ -422,7 +471,8 @@ nav {
   // @include mixins.xsmall {
   //   width: 200px;
   // }
-  width: 40%;
+  width: 60%;
+  max-width: 1200px;
   min-height: 44vh;
   // height: 70%;
 }
@@ -432,6 +482,7 @@ nav {
   flex-direction: column;
   min-height: 24vh;
   // border: 2px solid red;
+  justify-content: space-between;
   background-color: aliceblue;
 }
 
@@ -462,6 +513,7 @@ nav {
   // border: 2px solid lime;
   justify-content: space-around;
   justify-self: start;
+  padding-bottom: 20px;
 }
 
 .skills_container_row_img {
@@ -500,6 +552,52 @@ nav {
   }
   width: 200px;
   height: 200px;
+}
+
+.typescript {
+  // border: 2px solid yellow;
+  @include mixins.xsmall {
+    width: 100px;
+    height: 100px;
+  }
+  @include mixins.small {
+    width: 150px;
+    height: 150px;
+  }
+  @include mixins.medium {
+    width: 175px;
+    height: 175px;
+  }
+  width: 175px;
+  height: 175px;
+  margin-bottom: 10px;
+}
+
+.skills__img__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+  & p {
+    margin-bottom: 10px;
+  }
+}
+
+.education__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // border: 2px solid pink;
+  width: 40%;
+  height: 10vh;
+  max-width: 40%;
+  max-height: 10vh;
+}
+
+.education__img {
+  max-width: 60%;
+  max-height: 10vh;
 }
 
 .aboutme {
