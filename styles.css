@@ -492,7 +492,7 @@ nav {
   align-self: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 60%;
+  width: 70%;
   max-width: 1200px;
   min-height: 44vh;
 }
@@ -503,12 +503,12 @@ nav {
 }
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
   .skills_container {
-    width: 500px;
+    width: 700px;
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1400px) {
   .skills_container {
-    width: 600px;
+    width: 900px;
   }
 }
 
